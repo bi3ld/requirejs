@@ -8,10 +8,22 @@ define([], function () {
 
         this.updateParagraf = function(a, txt){
 
-            console.log(txt);
             a.p.text(txt);
 
+            console.log('Module 1');
+            console.log(a);
+
+            update(a);
+
         }
+
+        var update = function(a){
+
+            a.test = 666;
+            console.log('Update');
+            console.log(a);
+        }
+
 
     };
 
